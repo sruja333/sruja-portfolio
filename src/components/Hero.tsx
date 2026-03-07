@@ -27,7 +27,7 @@ const Hero = () => (
           <a href="https://linkedin.com/in/sruja-shashidhar-19a77728a/" target="_blank" rel="noopener noreferrer" className="px-5 py-3 border border-border rounded-lg text-foreground hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-2">
             <Linkedin size={18} /> LinkedIn
           </a>
-          <a href="#" className="px-5 py-3 border border-border rounded-lg text-foreground hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-2">
+          <a href="https://drive.google.com/file/d/1mwrBPq0ilUbAXdoGu7h_MjIsFhot2jnq/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-5 py-3 border border-border rounded-lg text-foreground hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-2">
             <FileDown size={18} /> Download Resume
           </a>
         </div>
