@@ -49,59 +49,53 @@ const Contact = () => {
             className="relative"
           >
             {/* Owl body */}
-            <div className="w-36 h-40 bg-secondary rounded-[50%_50%_48%_48%] border-2 border-border relative flex flex-col items-center justify-start pt-5">
-              {/* Ears - rounder, friendlier */}
-              <div className="absolute -top-5 left-3 w-5 h-7 bg-secondary rounded-t-full border-2 border-border border-b-0 rotate-[-10deg]" />
-              <div className="absolute -top-5 right-3 w-5 h-7 bg-secondary rounded-t-full border-2 border-border border-b-0 rotate-[10deg]" />
-              <div className="absolute -top-3 left-[18px] w-3 h-4 bg-primary/20 rounded-t-full rotate-[-10deg]" />
-              <div className="absolute -top-3 right-[18px] w-3 h-4 bg-primary/20 rounded-t-full rotate-[10deg]" />
+            <div className="w-32 h-36 bg-secondary rounded-[50%_50%_45%_45%] border-2 border-border relative flex flex-col items-center justify-start pt-6">
+              {/* Ears */}
+              <div className="absolute -top-4 left-4 w-0 h-0 border-l-[12px] border-r-[12px] border-b-[20px] border-l-transparent border-r-transparent border-b-secondary" />
+              <div className="absolute -top-4 right-4 w-0 h-0 border-l-[12px] border-r-[12px] border-b-[20px] border-l-transparent border-r-transparent border-b-secondary" />
+              <div className="absolute -top-3 left-[18px] w-0 h-0 border-l-[8px] border-r-[8px] border-b-[14px] border-l-transparent border-r-transparent border-b-primary/30" />
+              <div className="absolute -top-3 right-[18px] w-0 h-0 border-l-[8px] border-r-[8px] border-b-[14px] border-l-transparent border-r-transparent border-b-primary/30" />
 
-              {/* Eyes - bigger, friendlier */}
-              <div className="flex gap-3 mb-1">
-                <div className="w-12 h-12 rounded-full bg-card border-2 border-border flex items-center justify-center">
+              {/* Eyes */}
+              <div className="flex gap-4 mb-2">
+                <div className="w-10 h-10 rounded-full bg-card border-2 border-border flex items-center justify-center">
                   <motion.div
                     variants={owlVariants}
                     animate="blink"
-                    className="w-6 h-6 rounded-full bg-primary flex items-center justify-center"
+                    className="w-5 h-5 rounded-full bg-primary flex items-center justify-center"
                   >
-                    <div className="w-3 h-3 rounded-full bg-primary-foreground translate-x-0.5 -translate-y-0.5" />
+                    <div className="w-2 h-2 rounded-full bg-primary-foreground" />
                   </motion.div>
                 </div>
-                <div className="w-12 h-12 rounded-full bg-card border-2 border-border flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-card border-2 border-border flex items-center justify-center">
                   <motion.div
                     variants={owlVariants}
                     animate="blink"
-                    className="w-6 h-6 rounded-full bg-primary flex items-center justify-center"
+                    className="w-5 h-5 rounded-full bg-primary flex items-center justify-center"
                   >
-                    <div className="w-3 h-3 rounded-full bg-primary-foreground translate-x-0.5 -translate-y-0.5" />
+                    <div className="w-2 h-2 rounded-full bg-primary-foreground" />
                   </motion.div>
                 </div>
               </div>
 
-              {/* Rosy cheeks */}
-              <div className="flex gap-10 -mt-1 mb-0.5">
-                <div className="w-4 h-2.5 rounded-full bg-pink-400/30" />
-                <div className="w-4 h-2.5 rounded-full bg-pink-400/30" />
-              </div>
-
-              {/* Beak - smaller, cuter */}
-              <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-primary mb-2" />
+              {/* Beak */}
+              <div className="w-0 h-0 border-l-[8px] border-r-[8px] border-t-[10px] border-l-transparent border-r-transparent border-t-primary mb-2" />
 
               {/* Belly */}
-              <div className="w-18 h-12 bg-card/50 rounded-[50%] border border-border/50" />
+              <div className="w-16 h-12 bg-card/50 rounded-[50%] border border-border/50" />
             </div>
 
             {/* Feet */}
-            <div className="flex justify-center gap-8 -mt-1">
+            <div className="flex justify-center gap-6 -mt-1">
               <div className="flex gap-0.5">
-                <div className="w-2.5 h-3 bg-primary/50 rounded-b-full" />
-                <div className="w-2.5 h-3 bg-primary/50 rounded-b-full" />
-                <div className="w-2.5 h-3 bg-primary/50 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
               </div>
               <div className="flex gap-0.5">
-                <div className="w-2.5 h-3 bg-primary/50 rounded-b-full" />
-                <div className="w-2.5 h-3 bg-primary/50 rounded-b-full" />
-                <div className="w-2.5 h-3 bg-primary/50 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
               </div>
             </div>
           </motion.div>
@@ -113,7 +107,7 @@ const Contact = () => {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg text-primary font-medium text-center"
           >
-            Thank you for your time!
+            Thank you for your time! 🦉
           </motion.p>
         </motion.div>
       </div>
