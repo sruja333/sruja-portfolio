@@ -107,7 +107,7 @@ const Contact = () => {
             transition={{ delay: 0.4 }}
             className="mt-6 text-lg text-primary font-medium text-center"
           >
-            Thank you for your time! 🦉
+            Thank you for your time!
           </motion.p>
         </motion.div>
       </div>

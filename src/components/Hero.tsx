@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, FileDown } from "lucide-react";
+import profileImg from "@/assets/profile.png";
 
 const Hero = () => (
   <section className="min-h-screen flex items-center relative overflow-hidden">
