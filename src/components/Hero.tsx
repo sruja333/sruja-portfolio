@@ -10,7 +10,7 @@ const Hero = () => (
 
     <div className="section-container relative z-10">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-        <img src={profileImg} alt="Sruja Shashidhar" className="w-20 h-20 rounded-full border-2 border-primary/50 mb-5 object-cover" />
+        <img src={profileImg} alt="Sruja Shashidhar" className="w-28 h-28 rounded-full border-2 border-primary/50 mb-5 object-cover" />
         <p className="text-primary font-medium mb-3 tracking-wide">Hello, I'm</p>
         <h1 className="text-5xl md:text-7xl font-bold mb-4 text-foreground">Sruja Shashidhar</h1>
         <p className="text-xl md:text-2xl text-muted-foreground font-light mb-6">
