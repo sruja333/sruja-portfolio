@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { Mail, Github, Linkedin } from "lucide-react";
 
+const owlVariants = {
+  blink: {
+    scaleY: [1, 0.1, 1],
+    transition: { duration: 0.3, repeat: Infinity, repeatDelay: 3 },
+  },
+};
+
 const Contact = () => {
   return (
     <section id="contact" className="section-container">
@@ -13,10 +20,10 @@ const Contact = () => {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <p className="text-muted-foreground mb-8">Feel free to reach out for collaborations, opportunities, or just a chat!</p>
           <div className="space-y-4">
-            <div className="flex items-center gap-3 text-muted-foreground select-all cursor-text">
+            <a href="mailto:sruja03@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"><Mail className="text-primary" size={18} /></div>
               sruja03@gmail.com
-            </div>
+            </a>
             <a href="https://github.com/sruja333" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"><Github className="text-primary" size={18} /></div>
               github.com/sruja333
@@ -28,7 +35,7 @@ const Contact = () => {
           </div>
         </motion.div>
 
-        {/* Cute rabbit animation */}
+        {/* Cute owl animation */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -41,63 +48,55 @@ const Contact = () => {
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             className="relative"
           >
-            {/* Rabbit ears */}
-            <div className="flex justify-center gap-3 -mb-2 relative z-10">
-              <motion.div
-                animate={{ rotate: [-3, 3, -3] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className="w-6 h-16 bg-secondary rounded-full border-2 border-border origin-bottom flex items-center justify-center"
-              >
-                <div className="w-2 h-10 bg-primary/20 rounded-full mt-1" />
-              </motion.div>
-              <motion.div
-                animate={{ rotate: [3, -3, 3] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className="w-6 h-16 bg-secondary rounded-full border-2 border-border origin-bottom flex items-center justify-center"
-              >
-                <div className="w-2 h-10 bg-primary/20 rounded-full mt-1" />
-              </motion.div>
-            </div>
+            {/* Owl body */}
+            <div className="w-32 h-36 bg-secondary rounded-[50%_50%_45%_45%] border-2 border-border relative flex flex-col items-center justify-start pt-6">
+              {/* Ears */}
+              <div className="absolute -top-4 left-4 w-0 h-0 border-l-[12px] border-r-[12px] border-b-[20px] border-l-transparent border-r-transparent border-b-secondary" />
+              <div className="absolute -top-4 right-4 w-0 h-0 border-l-[12px] border-r-[12px] border-b-[20px] border-l-transparent border-r-transparent border-b-secondary" />
+              <div className="absolute -top-3 left-[18px] w-0 h-0 border-l-[8px] border-r-[8px] border-b-[14px] border-l-transparent border-r-transparent border-b-primary/30" />
+              <div className="absolute -top-3 right-[18px] w-0 h-0 border-l-[8px] border-r-[8px] border-b-[14px] border-l-transparent border-r-transparent border-b-primary/30" />
 
-            {/* Rabbit head */}
-            <div className="w-28 h-28 bg-secondary rounded-full border-2 border-border relative flex flex-col items-center justify-center z-20">
               {/* Eyes */}
-              <div className="flex gap-6 mb-2">
-                <motion.div
-                  animate={{ scaleY: [1, 0.1, 1] }}
-                  transition={{ duration: 0.3, repeat: Infinity, repeatDelay: 3 }}
-                  className="w-4 h-4 rounded-full bg-primary"
-                />
-                <motion.div
-                  animate={{ scaleY: [1, 0.1, 1] }}
-                  transition={{ duration: 0.3, repeat: Infinity, repeatDelay: 3 }}
-                  className="w-4 h-4 rounded-full bg-primary"
-                />
+              <div className="flex gap-4 mb-2">
+                <div className="w-10 h-10 rounded-full bg-card border-2 border-border flex items-center justify-center">
+                  <motion.div
+                    variants={owlVariants}
+                    animate="blink"
+                    className="w-5 h-5 rounded-full bg-primary flex items-center justify-center"
+                  >
+                    <div className="w-2 h-2 rounded-full bg-primary-foreground" />
+                  </motion.div>
+                </div>
+                <div className="w-10 h-10 rounded-full bg-card border-2 border-border flex items-center justify-center">
+                  <motion.div
+                    variants={owlVariants}
+                    animate="blink"
+                    className="w-5 h-5 rounded-full bg-primary flex items-center justify-center"
+                  >
+                    <div className="w-2 h-2 rounded-full bg-primary-foreground" />
+                  </motion.div>
+                </div>
               </div>
 
-              {/* Nose */}
-              <div className="w-3 h-2.5 bg-primary/60 rounded-full mb-1" />
+              {/* Beak */}
+              <div className="w-0 h-0 border-l-[8px] border-r-[8px] border-t-[10px] border-l-transparent border-r-transparent border-t-primary mb-2" />
 
-              {/* Mouth */}
-              <div className="flex gap-0.5">
-                <div className="w-2.5 h-1.5 border-b-2 border-l-2 border-primary/40 rounded-bl-full" />
-                <div className="w-2.5 h-1.5 border-b-2 border-r-2 border-primary/40 rounded-br-full" />
-              </div>
-
-              {/* Cheeks */}
-              <div className="absolute left-2 top-1/2 w-4 h-3 bg-primary/10 rounded-full" />
-              <div className="absolute right-2 top-1/2 w-4 h-3 bg-primary/10 rounded-full" />
-            </div>
-
-            {/* Rabbit body */}
-            <div className="w-24 h-20 bg-secondary rounded-[50%_50%_45%_45%] border-2 border-border -mt-4 mx-auto relative z-10 flex items-center justify-center">
-              <div className="w-14 h-12 bg-card/50 rounded-[50%] border border-border/50 mt-2" />
+              {/* Belly */}
+              <div className="w-16 h-12 bg-card/50 rounded-[50%] border border-border/50" />
             </div>
 
             {/* Feet */}
-            <div className="flex justify-center gap-4 -mt-1">
-              <div className="w-8 h-4 bg-secondary border-2 border-border rounded-full" />
-              <div className="w-8 h-4 bg-secondary border-2 border-border rounded-full" />
+            <div className="flex justify-center gap-6 -mt-1">
+              <div className="flex gap-0.5">
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+              </div>
+              <div className="flex gap-0.5">
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+                <div className="w-2 h-3 bg-primary/60 rounded-b-full" />
+              </div>
             </div>
           </motion.div>
 
