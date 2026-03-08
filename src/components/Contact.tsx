@@ -20,10 +20,10 @@ const Contact = () => {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <p className="text-muted-foreground mb-8">Feel free to reach out for collaborations, opportunities, or just a chat!</p>
           <div className="space-y-4">
-            <a href="mailto:sruja03@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+            <span className="flex items-center gap-3 text-muted-foreground select-all cursor-text">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"><Mail className="text-primary" size={18} /></div>
               sruja03@gmail.com
-            </a>
+            </span>
             <a href="https://github.com/sruja333" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"><Github className="text-primary" size={18} /></div>
               github.com/sruja333
