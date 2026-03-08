@@ -1,7 +1,7 @@
 A modern, responsive personal portfolio website showcasing my projects, skills, and experience as an AI/ML Engineer.
 
 ## Live Site
-View Portfolio: 
+View Portfolio: https://sruja-portfolio.vercel.app/
 
 🛠 Tech Stack
 ```
