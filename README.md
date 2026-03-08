@@ -1,7 +1,7 @@
 A modern, responsive personal portfolio website showcasing my projects, skills, and experience as an AI/ML Engineer.
 
-🔗 Live Site
-View Portfolio
+## Live Site
+View Portfolio: 
 
 🛠 Tech Stack
 Framework: React 18 + TypeScript
@@ -28,7 +28,9 @@ npm run dev
 
 # Build for production
 npm run build
-📁 Project Structure
+## 📁 Project Structure
+
+```
 src/
 ├── assets/          # Profile image
 ├── components/      # Page sections (Hero, About, Projects, etc.)
@@ -36,3 +38,4 @@ src/
 ├── hooks/           # Custom React hooks
 ├── lib/             # Utility functions
 └── pages/           # Route pages
+```
