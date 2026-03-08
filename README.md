@@ -4,6 +4,7 @@ A modern, responsive personal portfolio website showcasing my projects, skills, 
 View Portfolio: 
 
 🛠 Tech Stack
+```
 Framework: React 18 + TypeScript
 Build Tool: Vite
 Styling: Tailwind CSS with custom design tokens
@@ -11,6 +12,8 @@ UI Components: shadcn/ui (Radix UI primitives)
 Animations: Framer Motion
 Icons: Lucide React
 Routing: React Router DOM
+```
+
 📂 Sections
 ```
 Hero — Introduction with profile photo, social links, and resume download
