@@ -12,12 +12,14 @@ Animations: Framer Motion
 Icons: Lucide React
 Routing: React Router DOM
 📂 Sections
+```
 Hero — Introduction with profile photo, social links, and resume download
 About — Background and education details
 Projects — Highlighted ML/data science projects with GitHub links
 Skills — Categorized technical skills (ML, Data Analysis, Web, Tools)
 Experience — Work experience and achievements
 Contact — Email, GitHub, and LinkedIn with a fun owl animation
+```
 🚀 Getting Started
 
 # Install dependencies
